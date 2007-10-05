@@ -112,7 +112,7 @@ a.cc-actions:hover, #header-main .active a:link { background: url('/images/heade
 #main-content .feature { border-bottom:  1px solid #ddd; padding-bottom:  30px; margin-bottom: 25px; }
 #main-content h4 { padding-left: 1%; }
 
-.block { clear: both; margin-bottom: 35px; padding-left: 1%; padding-right: 10%; }
+.block { clear: both; margin-bottom: 50px; padding-left: 1%; padding-right: 10%; }
 
 #blog .block, #alpha .block { margin-bottom: 33px; }
 #features .block, #beta .block { padding: 0 5px; }
