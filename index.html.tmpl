@@ -82,15 +82,18 @@
 ### doesn't know about the "face", "facewidth" and "faceheight" configuration
 ### variables, but makes them available to us anyway.
 <div class="block blogged">
+<TMPL_IF channel_face>
+ <img class="face" src="images/<TMPL_VAR channel_face ESCAPE="HTML">" alt="" />
+</TMPL_IF>
+<TMPL_IF channel_country_code>
+ <img class="country" src="http://creativecommons.org/images/international/<TMPL_VAR channel_country_code ESCAPE="HTML">.png" alt="" />
+</TMPL_IF>
 <TMPL_IF title>
 <h2 class="title"><a href="<TMPL_VAR link ESCAPE="HTML">"><TMPL_VAR title></a></h2>
 </TMPL_IF>
 <h4 class="meta">
-<a href="<TMPL_VAR channel_link ESCAPE="HTML">" title="<TMPL_VAR channel_title_plain ESCAPE="HTML">"><TMPL_VAR channel_name></a>, <a href="<TMPL_VAR link ESCAPE="HTML">"><TMPL_VAR date></a>
+<a href="<TMPL_VAR channel_link ESCAPE="HTML">" title="<TMPL_VAR channel_title_plain ESCAPE="HTML">"><TMPL_VAR channel_name></a>, <TMPL_VAR date>
 </h4>
- <TMPL_IF channel_face>
-  <img class="face" src="images/<TMPL_VAR channel_face ESCAPE="HTML">" width="<TMPL_VAR channel_facewidth ESCAPE="HTML">" height="<TMPL_VAR channel_faceheight ESCAPE="HTML">" alt="">
- </TMPL_IF>
 
 <div class="entrygroup" id="<TMPL_VAR id>"<TMPL_IF channel_language> lang="<TMPL_VAR channel_language>"</TMPL_IF>>
 
