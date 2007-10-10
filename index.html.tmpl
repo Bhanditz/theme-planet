@@ -124,6 +124,15 @@
               </select>
               <span class="international"><a href="/worldwide">More information</a></span>
 
+              <h4><br/>Blogroll</h4>
+              <ul>
+                <TMPL_LOOP Channels>
+                <li>
+                  <a <TMPL_IF link>href="<TMPL_VAR link ESCAPE="HTML">" </TMPL_IF><TMPL_IF message>class="message" title="<TMPL_VAR message ESCAPE="HTML">"</TMPL_IF><TMPL_UNLESS message>title="<TMPL_VAR title_plain ESCAPE="HTML">"</TMPL_UNLESS>><TMPL_VAR name></a>
+                </li>
+                </TMPL_LOOP>
+              </ul>
+
               <h4><br/>The Commons</h4>
               <ul>
                 <li><img src="http://creativecommons.org/images/commons/sc.png"> <a href="http://sciencecommons.org/">Science Commons</a></li>
